@@ -1,5 +1,10 @@
 # Packative Dark Mode
 
+# How to? ❓
+- Fork this repository, so it can stay on Github
+- Commit your changes after every task
+- When you finish, send us the link of your repository
+
 # Goals / Outcomes ✨
 - Using state and global state
 - DOM manipulation
@@ -18,13 +23,10 @@
 - How we would use Dark mode on other potential routes/components in a bigger application. Would your solution work for this?
 - How we can apply a class to the `html` DOM element
 
-&nbsp;
 # What's Already Been Done 🏁
 - Basic app UI (mobile responsive)
 - Dark mode and light mode styles/themes
 
-&nbsp;
 # Screenshots 🌄
-&nbsp;
 ![screenshot-light](docs/lightmode.jpg)
 ![screenshot-dark](docs/darkmode.jpg)
