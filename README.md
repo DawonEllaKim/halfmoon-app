@@ -26,5 +26,5 @@
 &nbsp;
 # Screenshots 🌄
 &nbsp;
-![screenshot-light](https://puu.sh/Fq13d/04a9e5ad48.png)
-![screenshot-dark](https://puu.sh/Ilwao/795ef304a2.png)
+![screenshot-light](docs/lightmode.jpg)
+![screenshot-dark](docs/darkmode.jpg)
