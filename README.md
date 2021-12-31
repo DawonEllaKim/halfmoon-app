@@ -27,6 +27,9 @@
 - Basic app UI (mobile responsive)
 - Dark mode and light mode styles/themes
 
+# Package Manager
+- Please use ```yarn```
+
 # Screenshots 🌄
 ![screenshot-light](docs/lightmode.jpg)
 ![screenshot-dark](docs/darkmode.jpg)
