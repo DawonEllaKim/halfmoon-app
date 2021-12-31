@@ -2,6 +2,9 @@
   "name": "darkmode-app",
   "version": "0.1.0",
   "private": true,
+  "author": "Dominik Danninger <dominik@packative.com",
+  "license": "MIT",
+  "description": "🌑🌙☀ Halfmoon App - a packative Frontend React Assessment Test",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
