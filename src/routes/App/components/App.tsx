@@ -4,22 +4,29 @@ import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import './App.scss';
 
 function App() {
-	// If themeChange is true, it means "light mode on".
-	const [themeChange, setThemeChange] = useState(true);
+	// To use theme-color for other pages, I saved theme-color status into the local storage.
+	const theme = localStorage.getItem("theme");
+	const [themeChange, setThemeChange] = useState(theme);
 
-	const changeThemeColor = () => {
-		setThemeChange(!themeChange);
-	}
+	const switchToDarkMode = () => {
+		setThemeChange("darkMode");
+		localStorage.setItem("theme", "darkMode")
+	};
+
+	const switchToLightMode = () => {
+		setThemeChange("lightMode");
+		localStorage.setItem("theme", "lightMode")
+	};
 
     return (
-        <div className={ themeChange ? "app" : "app dark-mode"}>
+        <div className={ themeChange !== "darkMode" ? "app" : "app dark-mode"}>
             <div className="level">
                 <div>
 										<h1 className="title">Packative Dark Mode</h1>
                 </div>
 
-                <button className="app__dark-mode-btn icon level-right" onClick={changeThemeColor}>
-									{ themeChange ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} style={{ color: "#F89709" }} /> }
+                <button className="app__dark-mode-btn icon level-right">
+									{ themeChange !== "darkMode" ? <FontAwesomeIcon icon={faMoon}  onClick={switchToDarkMode} /> : <FontAwesomeIcon icon={faSun} style={{ color: "#F89709" }}  onClick={switchToLightMode} /> }
                 </button>
             </div>
 
