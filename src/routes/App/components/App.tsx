@@ -1,21 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import './App.scss';
 
 function App() {
+	// If themeChange is true, it means "light mode on".
+	const [themeChange, setThemeChange] = useState(true);
+
+	const changeThemeColor = () => {
+		setThemeChange(!themeChange);
+	}
+
     return (
-        <div className="app">
+        <div className={ themeChange ? "app" : "app dark-mode"}>
             <div className="level">
                 <div>
-                    <h1 className="title">Packative Dark Mode</h1>
+										<h1 className="title">Packative Dark Mode</h1>
                 </div>
 
-                {/* --TODO: The button that should toggle dark mode-- */}
-                <button className="app__dark-mode-btn icon level-right">
-                    <FontAwesomeIcon icon={faMoon} />
+                <button className="app__dark-mode-btn icon level-right" onClick={changeThemeColor}>
+									{ themeChange ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} style={{ color: "#F89709" }} /> }
                 </button>
-
             </div>
 
             <div className="columns">
