@@ -22,7 +22,7 @@ function App() {
         <div className={ themeChange !== "darkMode" ? "app" : "app dark-mode"}>
             <div className="level">
                 <div>
-										<h1 className="title">Packative Dark Mode</h1>
+										<h1 className="title" data-testid="header">Packative Dark Mode</h1>
                 </div>
 
                 <button className="app__dark-mode-btn icon level-right">
